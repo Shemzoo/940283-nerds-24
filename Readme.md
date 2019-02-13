@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Георгий Левин](https://up.htmlacademy.ru/htmlcss/24/user/940283).
-* Наставник: [Макс Пушкарев].(https://htmlacademy.ru/profile/id87167)
+* Наставник: [Макс Пушкарев](https://htmlacademy.ru/profile/id87167).
 
 ---
 
