@@ -1,12 +1,155 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Дизайн-студия Нёрдс</title>
+</head>
 
-  </body>
+<body>
+
+  <header class="main-header">
+    <a class="main-logo" href="index.html">
+      <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотин дизайн-студии «Нёрдс»">
+    </a>
+    <nav class="main-navigation">
+      <ul class="main-navigation-list">
+        <li><a href="studio.html">Студия</a></li>
+        <li><a href="clients.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <a href="cart.html"><img class="cart-icon" src="img/cart-icon.svg">Корзина</a>
+    <section class="features">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <!--Слайдер-->
+    </section>
+  </header>
+
+  <main class="container">
+    <section class="service-list">
+      <h1 class="visually-hidden">Услуги</h2>
+        <ul class="service-list-items">
+          <li>
+            <img src="" alt="Веб-сайты">
+            <h2>Веб-сайты</h2>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <button class="button button-red">Заказать</button>
+          </li>
+          <li>
+            <img src="" alt="Приложения">
+            <h2>Приложения</h2>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <button class="button button-green">Заказать</button>
+          </li>
+          <li>
+            <img src="" alt="Презентации">
+            <h2>Презентации</h2>
+            <p>Вы даже не подозреваете насколько вы изумительны!</p>
+            <button class="button button-yellow">Заказать</button>
+          </li>
+        </ul>
+    </section>
+
+    <section class="about">
+
+      <div class="about-left">
+        <span class="lead">Мы — маленькая, но гордая дизайн-студия из Краснодара.</span>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <span class="bold">Выполняем заказы на разработку:</span>
+        <ul class="orders-list">
+          <li>
+            <p>Веб-сайтов любой сложности</p>
+          </li>
+          <li>
+            <p>Молбильных приложений для iOS и Android</p>
+          </li>
+          <li>
+            <p>Слайдшоу и видео для корпоративных презентаций</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="about-right">
+        <img src="#" alt="Логотин дизайн-студии «Нёрдс»" width="360" height="208">
+        <span class="bold">С 2004 года любим точность во всем:</span>
+        <ul class="features-list">
+          <li class="features-item">
+            146<sup>%</sup>
+            <p>Уровень самоотдачи</p>
+          </li>
+          <li class="features-item">
+            100<sup>%</sup>
+            <p>Соблюденние сроков</p>
+          </li>
+          <li class="features-item">
+            50<sup>%</sup>
+            <p>Минимальная предоплата</p>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="clients">
+      <ul class="clients-list">
+        <li>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#">HTML Academy</a>
+        </li>
+        <li>
+          <a href="#"><img src="#">Barbershop «Borodinsky»</a>
+        </li>
+        <li>
+          <a href="#"><img src="#">Pink</a>
+        </li>
+        <li>
+          <a href="#"><img src="#">Mishka</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <section class="whereabouts">
+
+      <div class="address">
+        <h1 class="visually-hidden">Адрес студии</h1>
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д 19/8</p>
+      </div>
+
+      <div class="map">
+        <h1 class="visually-hidden">Карта</h1>
+        <!--Карта-->
+      </div>
+    </section>
+
+    <section class="footer-social">
+      <h1 class="visually-hidden">Социальные сети</h1>
+      <ul class="social">
+        <li>
+          <a href="https://vk.com/htmlacademy">
+            <img src="#" alt="Вконтакте">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/htmlacademy">
+            <img src="#" alt="Фейсбук">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/htmlacademy/">
+            <img src="#" alt="Инстаграм">
+          </a>
+        </li>
+      </ul>
+
+      <div class="footer-social-text">
+        <span class="footer-lead">Давайте дружить, это выгодно!</span>
+        <p>Скидка 10% для друзей из социальных сетей</p>
+      </div>
+  </footer>
+</body>
+
 </html>
