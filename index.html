@@ -9,51 +9,77 @@
 <body>
 
   <header class="main-header">
-    <a class="main-logo" href="index.html">
-      <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотин дизайн-студии «Нёрдс»">
-    </a>
-    <nav class="main-navigation">
-      <ul class="main-navigation-list">
-        <li><a href="studio.html">Студия</a></li>
-        <li><a href="clients.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-    </nav>
-    <a href="cart.html"><img class="cart-icon" src="img/cart-icon.svg">Корзина</a>
+    <div class="header-top">
+      <a class="main-logo" href="index.html">
+        <img src="img/nerds-logo.svg" alt="Логотин дизайн-студии «Нёрдс»">
+      </a>
+      <nav class="main-navigation">
+        <ul class="main-navigation-list">
+          <li><a href="studio.html">Студия</a></li>
+          <li><a href="clients.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина</a>
+    </div>
+
     <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
-      <!--Слайдер-->
+      <div class="container">
+        <div class="slider-controls">
+          <i class="active"></i>
+          <i></i>
+          <i></i>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item">
+            <h3>Долго, дорого,<br> скрупулезно.</h3>
+            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3>Любим математику как никто другой</h3>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3>Только ночь,<br> только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
+          </li>
+        </ul>
+      </div>
     </section>
   </header>
 
-  <main class="container">
+  <main class="main">
     <section class="service-list">
-      <h1 class="visually-hidden">Услуги</h2>
-        <ul class="service-list-items">
-          <li>
-            <img src="" alt="Веб-сайты">
-            <h2>Веб-сайты</h2>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <button class="button button-red">Заказать</button>
-          </li>
-          <li>
-            <img src="" alt="Приложения">
-            <h2>Приложения</h2>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <button class="button button-green">Заказать</button>
-          </li>
-          <li>
-            <img src="" alt="Презентации">
-            <h2>Презентации</h2>
-            <p>Вы даже не подозреваете насколько вы изумительны!</p>
-            <button class="button button-yellow">Заказать</button>
-          </li>
-        </ul>
+      <h2 class="visually-hidden">Услуги</h2>
+      <ul class="service-list-items">
+        <li>
+          <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
+          <h2>Веб-сайты</h2>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <button class="button button-red">Заказать</button>
+        </li>
+        <li>
+          <img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
+          <h2>Приложения</h2>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <button class="button button-green">Заказать</button>
+        </li>
+        <li>
+          <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
+          <h2>Презентации</h2>
+          <p>Вы даже не подозреваете насколько вы изумительны!</p>
+          <button class="button button-yellow">Заказать</button>
+        </li>
+      </ul>
     </section>
 
     <section class="about">
-
+      <h2 class="visually-hidden">О студии</h2>
       <div class="about-left">
         <span class="lead">Мы — маленькая, но гордая дизайн-студия из Краснодара.</span>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -72,7 +98,7 @@
       </div>
 
       <div class="about-right">
-        <img src="#" alt="Логотин дизайн-студии «Нёрдс»" width="360" height="208">
+        <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотин дизайн-студии «Нёрдс»">
         <span class="bold">С 2004 года любим точность во всем:</span>
         <ul class="features-list">
           <li class="features-item">
@@ -93,18 +119,19 @@
     </section>
 
     <section class="clients">
+      <h2 class="visually-hidden">Наши клиенты</h2>
       <ul class="clients-list">
         <li>
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#">HTML Academy</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1-png.png" width="199" height="68" alt="Логотип академии">HTML Academy</a>
         </li>
         <li>
-          <a href="#"><img src="#">Barbershop «Borodinsky»</a>
+          <a href="#"><img src="img/logo-2-png.png" width="209" height="90" alt="Логотип барбершопа «Бородинский»">Barbershop «Borodinsky»</a>
         </li>
         <li>
-          <a href="#"><img src="#">Pink</a>
+          <a href="#"><img src="img/logo-3-png.png" width="185" height="52" alt="Логотип приложения «Пинк»">Pink</a>
         </li>
         <li>
-          <a href="#"><img src="#">Mishka</a>
+          <a href="#"><img src="img/logo-4-png.png" width="173" height="84" alt="Логотип магазина «Мишка»">Mishka</a>
         </li>
       </ul>
     </section>
@@ -127,29 +154,55 @@
 
     <section class="footer-social">
       <h1 class="visually-hidden">Социальные сети</h1>
-      <ul class="social">
+      <ul class="footer-social-list">
         <li>
           <a href="https://vk.com/htmlacademy">
-            <img src="#" alt="Вконтакте">
+            <img src="img/vk-icon.png" width="26" height="15" alt="Вконтакте">
           </a>
         </li>
         <li>
           <a href="https://www.facebook.com/htmlacademy">
-            <img src="#" alt="Фейсбук">
+            <img src="img/fb-icon.png" width="12" height="25" alt="Фейсбук">
           </a>
         </li>
         <li>
           <a href="https://www.instagram.com/htmlacademy/">
-            <img src="#" alt="Инстаграм">
+            <img src="img/fb-icon.png" width="12" height="25" alt="Инстаграм">
           </a>
         </li>
       </ul>
+    </section>
 
-      <div class="footer-social-text">
-        <span class="footer-lead">Давайте дружить, это выгодно!</span>
-        <p>Скидка 10% для друзей из социальных сетей</p>
-      </div>
+    <div class="footer-social-text">
+      <span class="footer-lead">Давайте дружить, это выгодно!</span>
+      <p>Скидка 10% для друзей из социальных сетей</p>
+    </div>
   </footer>
+
+  <section class="modal-write-us">
+    <h1>Напишите нам</h1>
+    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="write-us-top">
+        <label for="name"><b>Ваше имя:</b></label>
+        <input type="text" name="name" value="" placeholder="Имя Фамилия" id="name">
+        <label for="email"><b>Ваш e-mail:</b></label>
+        <input type="email" name="email" value="" placeholder="email@example.com" id="email">
+      </div>
+      <div class="write-us-middle">
+        <label for="textarea"><b>Текст письма:</b></label>
+        <textarea placeholder="В свободной форме" rows="4" id="textarea"></textarea>
+      </div>
+      <div class="write-us-bot">
+        <input class="button button-red" type="submit" name="send" value="Отправить">
+      </div>
+    </form>
+    <div class="close-cross">
+      <a href="index.html">
+        <img src="img/close-cross.png" alt="Кнопка «Закрыть»">
+      </a>
+    </div>
+  </section>
+
 </body>
 
 </html>
