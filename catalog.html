@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -21,7 +24,8 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
-      <a href="cart.html"><img class="cart-icon" src="img/cart-icon.svg" alt="Иконка корзины">Корзина</a>
+      <a class="cart-item" href="cart.html">
+        <img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина</a>
     </div>
     <div class="header-bot">
       <h1>Магазин готовых шаблонов</h1>
@@ -34,7 +38,7 @@
       <div class="filters">
         <h2 class="visually-hidden">Фильтры</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="filter-tem">
+          <fieldset class="filter-item">
             <legend>Стоимость:</legend>
             <div class="range-filter">
               <div class="range-controls">
@@ -97,6 +101,7 @@
               </ul>
             </div>
           </fieldset>
+          <button class="show-button" type="submit" name="button">Показать</button>
         </form>
       </div>
 
@@ -104,12 +109,12 @@
         <h2 class="visually-hidden">Готовые шаблоны</h2>
         <div class="sorting">
           <p class="bold">СОРТИРОВАТЬ:</p>
-          <ul>
+          <ul class="sorting-list-1">
             <li>По цене:</li>
             <li>По типу:</li>
             <li>По названию:</li>
           </ul>
-          <ul>
+          <ul class="sorting-list-2">
             <li>кнопка вниз</li>
             <li>кнопка вверх</li>
           </ul>
@@ -125,7 +130,7 @@
             <div class="catalog-item-card">
               <p class="bold">SEDONA</p>
               <p class="card-gray-text">Информационный сайт для туристов</p>
-              <a class="button red-button" href="#">9 900 РУБ.</a>
+              <a class="card-button" href="#">9 900 РУБ.</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -138,7 +143,7 @@
             <div class="catalog-item-card">
               <p class="bold">PINK APP</p>
               <p class="card-gray-text">Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="button red-button" href="#">9 900 РУБ.</a>
+              <a class="card-button" href="#">9 900 РУБ.</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -151,7 +156,7 @@
             <div class="catalog-item-card">
               <p class="bold">BARBERSHOP</p>
               <p class="card-gray-text">Сайт салона красоты. Для мужчин, да.</p>
-              <a class="button red-button" href="#">9 900 РУБ.</a>
+              <a class="card-button" href="#">9 900 РУБ.</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -164,7 +169,7 @@
             <div class="catalog-item-card">
               <p class="bold">MISHKA</p>
               <p class="card-gray-text">Интернет-магазин вязаных игрушек</p>
-              <a class="button red-button" href="#">9 900 РУБ.</a>
+              <a class="card-button" href="#">9 900 РУБ.</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -177,7 +182,7 @@
             <div class="catalog-item-card">
               <p class="bold">A PLUS</p>
               <p class="card-gray-text">Лендинг курсов повышения квалификации</p>
-              <a class="button red-button" href="#">9 900 РУБ.</a>
+              <a class="card-button" href="#">9 900 РУБ.</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -190,25 +195,25 @@
             <div class="catalog-item-card">
               <p class="bold">КВАСТ</p>
               <p class="card-gray-text">Промо-сайт производителя крафтового кваса</p>
-              <a class="button red-button" href="#">9 900 РУБ.</a>
+              <a class="card-button" href="#">9 900 РУБ.</a>
             </div>
           </li>
         </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current">
+            <a href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">Следующая</a>
+          </li>
+        </ul>
       </div>
-      <ul class="pagination-list">
-        <li class="pagination-item pagination-item-current">
-          <a href="#">1</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#">3</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#">Следующая</a>
-        </li>
-      </ul>
     </section>
   </main>
 
@@ -216,8 +221,10 @@
 
     <div class="address">
       <h2 class="visually-hidden">Адрес студии</h2>
-      <h2>NЁRDS DESIGN STUDIO</h2>
-      <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д 19/8</p>
+      <p class="address-bold">NЁRDS DESIGN STUDIO</p>
+      <p class="address-content">191186, Санкт-Петербург, ул. Б. Конюшенная, д 19/8
+      <p class="address-content">тел. +7 (812) 275-75-75</p>
+      <a class="popup-button" href="popup">Напишите нам!</a>
     </div>
 
     <div class="map">

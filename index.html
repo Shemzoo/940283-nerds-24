@@ -4,6 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>Дизайн-студия Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body>
@@ -15,13 +20,14 @@
       </a>
       <nav class="main-navigation">
         <ul class="main-navigation-list">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li class="main-navigation-list-item"><a href="studio.html">Студия</a></li>
+          <li class="main-navigation-list-item"><a href="clients.html">Клиенты</a></li>
+          <li class="main-navigation-list-item"><a href="catalog.html">Магазин</a></li>
+          <li class="main-navigation-list-item"><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
-      <a href="cart.html"><img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина</a>
+      <a class="cart-item" href="cart.html">
+        <img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина</a>
     </div>
 
     <section class="slider">
@@ -33,20 +39,23 @@
           <i></i>
         </div>
         <ul class="slider-list">
-          <li class="slider-item">
+          <li class="slider-item-1">
             <h3>Долго, дорого, скрупулезно.</h3>
             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="slider-item-button button" href="#">Узнать больше</a>
+            <a class="slider-item-button" href="#">Узнать больше</a>
+            <div class="slide-1"></div>
           </li>
-          <li class="slider-item">
+          <li class="slider-item-2">
             <h3>Любим математику как никто другой</h3>
             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-            <a class="slider-item-button button" href="#">Узнать больше</a>
+            <a class="slider-item-button" href="#">Узнать больше</a>
+            <div class="slide-2"></div>
           </li>
-          <li class="slider-item">
+          <li class="slider-item-3">
             <h3>Только ночь, только хардкор</h3>
             <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class="slider-item-button button" href="#">Узнать больше</a>
+            <a class="slider-item-button" href="#">Узнать больше</a>
+            <div class="slide-3"></div>
           </li>
         </ul>
       </div>
@@ -59,21 +68,21 @@
       <ul class="service-list-items">
         <li>
           <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
-          <h2>Веб-сайты</h2>
+          <h2>ВЕБ-САЙТЫ</h2>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="button button-red" href="#">Заказать</a>
+          <a class="order-button button-red" href="#">Заказать</a>
         </li>
         <li>
           <img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
-          <h2>Приложения</h2>
+          <h2>ПРИЛОЖЕНИЯ</h2>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="button button-green" href="#">Заказать</a>
+          <a class="order-button button-green" href="#">Заказать</a>
         </li>
         <li>
           <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
-          <h2>Презентации</h2>
+          <h2>ПРЕЗЕНТАЦИИ</h2>
           <p>Вы даже не подозреваете насколько вы изумительны!</p>
-          <a class="button button-yellow" href="#">Заказать</a>
+          <a class="order-button button-yellow" href="#">Заказать</a>
         </li>
       </ul>
     </section>
@@ -82,7 +91,7 @@
       <h2 class="visually-hidden">О студии</h2>
       <div class="about-left">
         <p class="lead">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <p class="main-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
         <p class="bold">Выполняем заказы на разработку:</p>
         <ul class="orders-list">
           <li>
@@ -102,15 +111,15 @@
         <p class="bold">С 2004 года любим точность во всем:</p>
         <ul class="features-list">
           <li class="features-item">
-            146<sup>%</sup>
+            <span class="number">146<sup>%</sup></span>
             <p>Уровень самоотдачи</p>
           </li>
           <li class="features-item">
-            100<sup>%</sup>
+            <span class="number">100<sup>%</sup></span>
             <p>Соблюденние сроков</p>
           </li>
           <li class="features-item">
-            50<sup>%</sup>
+            <span class="number">50<sup>%</sup></span>
             <p>Минимальная предоплата</p>
           </li>
         </ul>
@@ -142,8 +151,9 @@
     <div class="address">
       <h2 class="visually-hidden">Адрес студии</h2>
       <p class="address-bold">NЁRDS DESIGN STUDIO</p>
-      <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д 19/8</p>
-      <p>тел. +7 (812) 275-75-75</p>
+      <p class="address-content">191186, Санкт-Петербург, ул. Б. Конюшенная, д 19/8
+      <p class="address-content">тел. +7 (812) 275-75-75</p>
+      <a class="popup-button" href="popup">Напишите нам!</a>
     </div>
 
     <div class="map">
@@ -173,7 +183,8 @@
     </ul>
 
     <div class="footer-social-text">
-      <p><span class="footer-lead">Давайте дружить, это выгодно!</span> Скидка 10% для друзей из социальных сетей</p>
+      <span class="footer-lead">Давайте дружить, это выгодно!</span>
+      <p>Скидка 10% для друзей из социальных сетей</p>
     </div>
   </footer>
 

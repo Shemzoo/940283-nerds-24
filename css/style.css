@@ -1,0 +1,399 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+
+  background-color: #fff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+
+header {
+  background-color: #eeeeee;
+}
+
+.main-navigation {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+}
+
+.main-navigation a:hover,
+.cart-item:hover {
+  color: #fb565a;
+}
+
+.main-navigation a:focus,
+.cart-item:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation-list-item,
+.slider-list,
+.service-list-items,
+.features-list,
+.clients-listб,
+.filter-radiobuttons,
+.filter-features-list,
+.sorting-list-1,
+.sorting-list-2 {
+  list-style: none;
+}
+
+.cart-item {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.slider-item-button {
+  width: 240px;
+  height: 50px;
+  background-color: #fb565a;
+  color: #ffffff;
+  text-align: center;
+  font: inherit;
+  text-transform: uppercase;
+}
+
+.order-button {
+  width: 160px;
+  height: 50px;
+  color: #ffffff;
+  font: inherit;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button-red {
+  background-color: #fb565a;
+}
+
+.button-green {
+  background-color: #00ca74;
+}
+
+.иет-yellow {
+  background-color: #efc84a;
+}
+
+.slider-item-1 h3 {
+  width: 380px;
+  height: 106px;
+  font-size: 55px;
+  font-weight: bold;
+  line-height: 55px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 28px;
+}
+
+.slider-item-1 p {
+  width: 330px;
+  height: 40px;
+  color: #283136;
+  text-align: left;
+  margin-bottom: 42px;
+}
+
+.slide-1  {
+  width: 750px;
+  height: 450px;
+  margin: 5px;
+  background-color: inherit;
+  background-image: url("img/slide-1.png");
+  background-repeat: no-repeat;
+}
+
+.slider-item-2 h3 {
+  width: 600px;
+  height: 100px;
+  font-size: 55px;
+  font-weight: bold;
+  line-height: 55px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 28px;
+}
+
+.slider-item-2 p {
+  width: 330px;
+  height: 40px;
+  color: #283136;
+  text-align: left;
+  margin-bottom: 42px;
+}
+
+.slide-2  {
+  width: 663px;
+  height: 430px;
+  margin: 5px;
+  background-color: inherit;
+  background-image: url("img/slide-2.png");
+}
+
+.slider-item-3 h3 {
+  width: 500px;
+  height: 100px;
+  font-size: 55px;
+  font-weight: bold;
+  line-height: 55px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 28px;
+}
+
+.slider-item-3 p {
+  width: 330px;
+  height: 40px;
+  color: #283136;
+  text-align: left;
+  margin-bottom: 42px;
+}
+
+.slide-3  {
+  width: 760px;
+  height: 410px;
+  margin: 5px;
+  background-color: inherit;
+  background-image: url("img/slide-3.png");
+}
+
+.service-list-items h2 {
+  width: 150px;
+  height: 25px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  color: #000000;
+}
+
+.service-list-items p {
+  width: 250px;
+  height: 35px;
+  text-align: left;
+  color: #283136;
+}
+
+.lead {
+  width: 670px;
+  height: 90px;
+  font-family: "Roboto";
+  font-size: 45px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 35px;
+}
+
+.main-text {
+  width: 616px;
+  height: 40px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #283136;
+  margin-bottom: auto;
+}
+
+.bold {
+  width: 429px;
+  height: 160px;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #283136;
+  text-transform: uppercase;
+}
+
+.number {
+ width: 93px;
+ height: 35px;
+ font-size: 45px;
+ font-weight: bold;
+ font-style: normal;
+ font-stretch: normal;
+ line-height: 0.22;
+ letter-spacing: normal;
+ text-align: left;
+ color: #000000
+}
+
+.features-item p {
+  width: 90px;
+  height: 30px;
+  margin-bottom: 50px;
+}
+
+.address-bold {
+  width: 200px;
+  height: 17px;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.address-content {
+  width: 200px;
+  height: 71px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: #666666;
+}
+
+.footer-lead {
+  width: 545px;
+  height: 35px;
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.modal-write-us {
+  width: 960px;
+  height: 590px;
+  background-color: #ffffff;
+}
+
+.modal-write-us h2 {
+  width: 306px;
+  height: 33px;
+  font-family: "Roboto";
+  font-size: 45px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.modal-write-us input {
+  width: 360px;
+  height: 50px;
+  border: solid 2px #d7dcde;
+}
+
+.header-bot h1 {
+  width: 750px;
+  height: 43px;
+  font-family: "Roboto";
+  font-size: 55px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+fieldset {
+  border: none;
+}
+
+.filter-item legend {
+  width: 120px;
+  height: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.2px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main-navigation-list {
+  list-style: none;
+}
+
+.card-gray-text {
+  color: #666666;
+}
+
+.card-button {
+  font: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  width: 200px;
+  height: 50px;
+  background-color: #fb565a;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  width: 50px;
+  height: 50px;
+  color: black;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.pagination-item-current a {
+  width: 50px;
+  height: 50px;
+  border: solid 3px #dbdbdb;
+}
+
+.popup-button {
+  font: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fb565a;
+}
