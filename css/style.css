@@ -10,6 +10,10 @@ body {
   background-color: #fff;
 }
 
+img {
+  max-width: 100%
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -35,7 +39,7 @@ header {
 .main-navigation {
   text-transform: uppercase;
   color: #000000;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .main-navigation a:hover,
@@ -62,12 +66,11 @@ header {
 
 .cart-item {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .slider-item-button {
   width: 240px;
-  height: 50px;
   background-color: #fb565a;
   color: #ffffff;
   text-align: center;
@@ -92,26 +95,22 @@ header {
   background-color: #00ca74;
 }
 
-.иет-yellow {
+.button-yellow {
   background-color: #efc84a;
 }
 
 .slider-item-1 h3 {
   width: 380px;
-  height: 106px;
   font-size: 55px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 55px;
-  text-align: left;
   color: #000000;
   margin-bottom: 28px;
 }
 
 .slider-item-1 p {
   width: 330px;
-  height: 40px;
   color: #283136;
-  text-align: left;
   margin-bottom: 42px;
 }
 
@@ -120,7 +119,7 @@ header {
   height: 450px;
   margin: 5px;
   background-color: inherit;
-  background-image: url("img/slide-1.png");
+  background-image: url("../img/slide-1.png");
   background-repeat: no-repeat;
 }
 
@@ -128,7 +127,7 @@ header {
   width: 600px;
   height: 100px;
   font-size: 55px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 55px;
   text-align: left;
   color: #000000;
@@ -148,25 +147,21 @@ header {
   height: 430px;
   margin: 5px;
   background-color: inherit;
-  background-image: url("img/slide-2.png");
+  background-image: url("../img/slide-2.png");
 }
 
 .slider-item-3 h3 {
   width: 500px;
-  height: 100px;
   font-size: 55px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 55px;
-  text-align: left;
   color: #000000;
   margin-bottom: 28px;
 }
 
 .slider-item-3 p {
   width: 330px;
-  height: 40px;
   color: #283136;
-  text-align: left;
   margin-bottom: 42px;
 }
 
@@ -175,166 +170,106 @@ header {
   height: 410px;
   margin: 5px;
   background-color: inherit;
-  background-image: url("img/slide-3.png");
+  background-image: url("../img/slide-3.png");
 }
 
 .service-list-items h2 {
   width: 150px;
-  height: 25px;
   font-size: 25px;
-  font-weight: bold;
-  text-align: left;
+  font-weight: 500;
   color: #000000;
 }
 
 .service-list-items p {
   width: 250px;
-  height: 35px;
-  text-align: left;
   color: #283136;
 }
 
 .lead {
   width: 670px;
-  height: 90px;
-  font-family: "Roboto";
   font-size: 45px;
-  font-weight: bold;
-  font-stretch: normal;
+  font-weight: 500;
   line-height: 1;
-  letter-spacing: normal;
-  text-align: left;
   color: #000000;
   margin-bottom: 35px;
 }
 
 .main-text {
   width: 616px;
-  height: 40px;
-  font-family: "Roboto";
   font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.5;
-  letter-spacing: normal;
-  text-align: left;
   color: #283136;
-  margin-bottom: auto;
 }
 
 .bold {
   width: 429px;
-  height: 160px;
   font-size: 16px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
+  font-weight: 500;
   line-height: 1.5;
-  letter-spacing: normal;
-  text-align: left;
   color: #283136;
   text-transform: uppercase;
 }
 
 .number {
  width: 93px;
- height: 35px;
  font-size: 45px;
- font-weight: bold;
- font-style: normal;
- font-stretch: normal;
+ font-weight: 500;
  line-height: 0.22;
- letter-spacing: normal;
- text-align: left;
  color: #000000
 }
 
 .features-item p {
   width: 90px;
-  height: 30px;
   margin-bottom: 50px;
 }
 
 .address-bold {
   width: 200px;
-  height: 17px;
-  font-family: "Roboto";
   font-size: 18px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
+  font-weight: 500;
   line-height: 1.67;
-  letter-spacing: normal;
-  text-align: left;
   color: #000000;
 }
 
 .address-content {
   width: 200px;
-  height: 71px;
-  font-family: "Roboto";
   font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.13;
-  letter-spacing: normal;
-  text-align: left;
   color: #666666;
 }
 
 .footer-lead {
   width: 545px;
-  height: 35px;
-  font-family: "Roboto";
   font-size: 36px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
+  font-weight: 500;
   line-height: 1;
-  letter-spacing: normal;
-  text-align: left;
   color: #000000;
 }
 
 .modal-write-us {
   width: 960px;
-  height: 590px;
   background-color: #ffffff;
 }
 
 .modal-write-us h2 {
   width: 306px;
-  height: 33px;
-  font-family: "Roboto";
   font-size: 45px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
+  font-weight: 500;
   line-height: 1;
-  letter-spacing: normal;
-  text-align: left;
   color: #000000;
 }
 
 .modal-write-us input {
   width: 360px;
   height: 50px;
-  border: solid 2px #d7dcde;
+  border: 2px solid #d7dcde;
 }
 
 .header-bot h1 {
   width: 750px;
-  height: 43px;
-  font-family: "Roboto";
   font-size: 55px;
   font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1;
-  letter-spacing: normal;
-  text-align: center;
   color: #000000;
 }
 
@@ -344,14 +279,10 @@ fieldset {
 
 .filter-item legend {
   width: 120px;
-  height: 14px;
   font-size: 18px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
+  font-weight: 500;
   line-height: 1.67;
   letter-spacing: 0.2px;
-  text-align: left;
   text-transform: uppercase;
   color: #000000;
 }
@@ -369,7 +300,6 @@ fieldset {
   text-align: center;
   text-transform: uppercase;
   width: 200px;
-  height: 50px;
   background-color: #fb565a;
 }
 
@@ -379,7 +309,6 @@ fieldset {
 
 .pagination-item a {
   width: 50px;
-  height: 50px;
   color: black;
   text-align: center;
   background-color: #eeeeee;
