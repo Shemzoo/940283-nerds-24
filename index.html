@@ -29,40 +29,41 @@
       <a class="cart-item" href="cart.html">
         <img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина</a>
     </div>
+    </header>
 
     <section class="slider">
-      <h2 class="visually-hidden">Преимущества</h2>
       <div class="container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
         <div class="slider-controls">
-          <i class="active"></i>
-          <i></i>
-          <i></i>
+          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
         </div>
         <ul class="slider-list">
-          <li class="slider-item-1">
-            <h3>Долго, дорого, скрупулезно.</h3>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="slider-item-button" href="#">Узнать больше</a>
-            <div class="slide-1"></div>
+          <li class="slider-item">
+            <h3>Долго, дорого,<br> скрупулезно.</h3>
+            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
           </li>
-          <li class="slider-item-2">
+          <li class="slider-item">
             <h3>Любим математику как никто другой</h3>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-            <a class="slider-item-button" href="#">Узнать больше</a>
-            <div class="slide-2"></div>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
           </li>
-          <li class="slider-item-3">
-            <h3>Только ночь, только хардкор</h3>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class="slider-item-button" href="#">Узнать больше</a>
-            <div class="slide-3"></div>
+          <li class="slider-item">
+            <h3>Только ночь,<br> только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
           </li>
         </ul>
       </div>
     </section>
-  </header>
 
   <main class="main">
+    <div class="container">
     <section class="service-list">
       <h2 class="visually-hidden">Услуги</h2>
       <ul class="service-list-items">
@@ -108,7 +109,9 @@
 
       <div class="about-right">
         <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотин дизайн-студии «Нёрдс»">
+        <div class="about-right-text">
         <p class="bold">С 2004 года любим точность во всем:</p>
+        </div>
         <ul class="features-list">
           <li class="features-item">
             <span class="number">146<sup>%</sup></span>
@@ -131,19 +134,20 @@
       <h2 class="visually-hidden">Наши клиенты</h2>
       <ul class="clients-list">
         <li>
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" alt="Логотип академии">HTML Academy</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" alt="Логотип академии"></a>
         </li>
         <li>
-          <a href="#"><img src="img/logo-2.png" width="209" height="90" alt="Логотип барбершопа «Бородинский»">Barbershop «Borodinsky»</a>
+          <a href="#"><img src="img/logo-2.png" width="209" height="90" alt="Логотип барбершопа «Бородинский»"></a>
         </li>
         <li>
-          <a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Логотип приложения «Пинк»">Pink</a>
+          <a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Логотип приложения «Пинк»"></a>
         </li>
         <li>
-          <a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Логотип магазина «Мишка»">Mishka</a>
+          <a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Логотип магазина «Мишка»"></a>
         </li>
       </ul>
     </section>
+    </div>
   </main>
 
   <section class="whereabouts">
@@ -152,8 +156,8 @@
       <h2 class="visually-hidden">Адрес студии</h2>
       <p class="address-bold">NЁRDS DESIGN STUDIO</p>
       <p class="address-content">191186, Санкт-Петербург, ул. Б. Конюшенная, д 19/8
-      <p class="address-content">тел. +7 (812) 275-75-75</p>
-      <a class="popup-button" href="popup">Напишите нам!</a>
+        <p class="address-content">тел. +7 (812) 275-75-75</p>
+        <a class="popup-button" href="popup">Напишите нам!</a>
     </div>
 
     <div class="map">
@@ -162,6 +166,7 @@
     </div>
   </section>
 
+  <div class="container">
   <footer class="main-footer">
     <h2 class="visually-hidden">Социальные сети</h2>
     <ul class="footer-social-list">
@@ -187,6 +192,7 @@
       <p>Скидка 10% для друзей из социальных сетей</p>
     </div>
   </footer>
+  </div>
 
   <section class="modal-write-us">
     <h2>Напишите нам</h2>
