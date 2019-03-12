@@ -81,12 +81,18 @@ header {
 }
 
 .order-button {
+  display: block;
   width: 160px;
-  height: 50px;
+  padding: 13px 0;
+  font-size: 16px;
+  line-height: 18px;
   color: #ffffff;
-  font: inherit;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
 }
 
 .button-red {
@@ -101,94 +107,22 @@ header {
   background-color: #efc84a;
 }
 
-.slider-item-1 h3 {
-  width: 380px;
-  font-size: 55px;
-  font-weight: 500;
-  line-height: 55px;
-  color: #000000;
-  margin-bottom: 28px;
-}
-
-.slider-item-1 p {
-  width: 330px;
-  color: #283136;
-  margin-bottom: 42px;
-}
-
-.slide-1  {
-  width: 750px;
-  height: 450px;
-  margin: 5px;
-  background-color: inherit;
-  background-image: url("../img/slide-1.png");
-  background-repeat: no-repeat;
-}
-
-.slider-item-2 h3 {
-  width: 600px;
-  height: 100px;
-  font-size: 55px;
-  font-weight: 500;
-  line-height: 55px;
-  text-align: left;
-  color: #000000;
-  margin-bottom: 28px;
-}
-
-.slider-item-2 p {
-  width: 330px;
-  height: 40px;
-  color: #283136;
-  text-align: left;
-  margin-bottom: 42px;
-}
-
-.slide-2  {
-  width: 663px;
-  height: 430px;
-  margin: 5px;
-  background-color: inherit;
-  background-image: url("../img/slide-2.png");
-}
-
-.slider-item-3 h3 {
-  width: 500px;
-  font-size: 55px;
-  font-weight: 500;
-  line-height: 55px;
-  color: #000000;
-  margin-bottom: 28px;
-}
-
-.slider-item-3 p {
-  width: 330px;
-  color: #283136;
-  margin-bottom: 42px;
-}
-
-.slide-3  {
-  width: 760px;
-  height: 410px;
-  margin: 5px;
-  background-color: inherit;
-  background-image: url("../img/slide-3.png");
-}
 
 .service-list-items h2 {
-  width: 150px;
-  font-size: 25px;
-  font-weight: 500;
-  color: #000000;
+    padding: 0;
+    margin: 19px 0 0;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
 }
 
 .service-list-items p {
-  width: 250px;
   color: #283136;
+  width: 275px;
+  margin-bottom: 33px;
 }
 
 .lead {
-  width: 670px;
   font-size: 45px;
   font-weight: 500;
   line-height: 1;
@@ -197,23 +131,20 @@ header {
 }
 
 .main-text {
-  width: 616px;
   font-size: 16px;
   line-height: 1.5;
   color: #283136;
 }
 
 .bold {
-  width: 429px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.5;
   color: #283136;
   text-transform: uppercase;
 }
 
 .number {
- width: 93px;
  font-size: 45px;
  font-weight: 500;
  line-height: 0.22;
@@ -335,14 +266,11 @@ fieldset {
 
 .header-top {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 50px;
 }
 
 a.main-logo {
-  margin-top: 50px;
+  margin-right: 202px;
 }
 
 .main-navigation-list {
@@ -351,15 +279,25 @@ a.main-logo {
   justify-content: space-between;
 }
 
-nav.main-navigation {
-  margin-top: 60px;
-  width: 500px;
+ul.main-navigation-list {
+  padding-top: 30px;
+  padding-left: 0px;
+  margin: 0;
+}
+
+li.main-navigation-list-item {
+  margin-right: 47px;
 }
 
 a.cart-item {
-  margin-top: 75px;
+  margin-left: auto;
+  padding-top: 16px;
 }
 
+img.cart-icon {
+  margin-top: 15px;
+  margin-right: 26px;
+}
 /*Слайдер*/
 
 .container {
@@ -371,7 +309,7 @@ a.cart-item {
 
 .slider {
   position: relative;
-
+  margin-bottom: 80px;
   background-color: #eeeeee;
 }
 
@@ -523,12 +461,13 @@ a.cart-item {
 
 .service-list-items {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  padding: 0;
+  margin-top: 0;
   margin-bottom: 162px;
 }
 
 /*О компании*/
+
 
 .about {
   display: flex;
@@ -540,6 +479,8 @@ a.cart-item {
 .features-list {
   display: flex;
   flex-direction: row;
+  padding: 0;
+  margin: 0;
 }
 
 li.features-item {
@@ -547,21 +488,38 @@ li.features-item {
 }
 
 .about-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 360px;
+  text-align: center;
 }
 
 .about-right img {
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 }
 
-div.about-right-text {
-  margin-left: 100px;
-  margin-bottom: 20px;
+.about-right-text p {
+  margin: 0;
 }
 
+.about-right-text  {
+  margin-bottom: 50px;
+}
+
+.about-left {
+  width: 650px;
+}
+
+.about-left p {
+  margin: 0px;
+}
+
+p.lead {
+  margin-bottom: 35px;
+}
+
+p.main-text {
+  margin: 0px;
+  margin-bottom: 47px;
+}
 /*Клиенты*/
 
 .clients-list {
@@ -710,6 +668,7 @@ div.about-right-text {
 /*Правая часть каталога*/
 .catalog {
   display: flex;
+  justify-content: space-between;
 }
 
 p.bold {
@@ -717,14 +676,9 @@ p.bold {
 }
 
 .catalog-items {
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
-}
-
-.catalog-items {
-
+  width: 840px;
 }
 
 .sorting p {
@@ -737,20 +691,19 @@ p.bold {
 .sorting {
   display: flex;
   margin-top: 0;
-  margin-left: 90px;
 }
 
 ul.sorting-list-1, ul.sorting-list-2 {
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .sorting-list-1 {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
 }
 
 .sorting-list-1 li {
-  width: 120px;
   text-transform: uppercase;
 }
 
@@ -760,11 +713,14 @@ ul.sorting-list-1, ul.sorting-list-2 {
 }
 
 .catalog-list {
-  margin-left: 50px;
+  margin-left: 0;
+  padding: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
+
 
 .pagination-list {
   display: flex;
@@ -773,4 +729,72 @@ ul.sorting-list-1, ul.sorting-list-2 {
 
 .pagination-list li {
   margin-left: 10px;
+}
+
+.service-list-items li {
+  width: 300px;
+  margin-right: 100px;
+}
+
+ul.service-list-items:last-child {
+  margin-right: 0px;
+}
+
+.service-list-items h2 {
+  text-transform: uppercase;
+}
+
+ul.clients-list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 125px;
+}
+
+.features-list li p {
+  text-align: left;
+}
+
+div.map {
+  width: 100%;
+  height: 416px;
+}
+
+.map {
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.address-bold {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.service-list-items li:last-child {
+  margin-right: 0px;
+}
+
+.filters {
+  width: 260px;
+}
+
+ul.sorting-list-1 {
+  margin-left: 267px;
+  margin-right: 48px;
+}
+
+ul.sorting-list-1 li {
+}
+
+ul.sorting-list-1 li:last-child {
+  margin-right: 0px;
+}
+
+.sorting-list-1 li {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+p.bold {
+  margin-bottom: 0px;
 }
