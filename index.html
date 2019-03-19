@@ -28,7 +28,14 @@
           </ul>
         </nav>
         <a class="cart-item" href="cart.html">
-          <img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина</a>
+          <svg class="cart-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+          <g>
+          	<circle cx="4.5" cy="13.5" r="1.5"/>
+          	<circle cx="12.5" cy="13.5" r="1.5"/>
+          	<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+          </g>
+          </svg>Корзина</a>
       </div>
     </div>
   </header>
@@ -117,15 +124,15 @@
           <ul class="features-list">
             <li class="features-item">
               <span class="number">146<sup>%</sup></span>
-              <p>Уровень самоотдачи</p>
+              <p class="features-text">Уровень самоотдачи</p>
             </li>
             <li class="features-item">
               <span class="number">100<sup>%</sup></span>
-              <p>Соблюденние сроков</p>
+              <p class="features-text">Соблюденние сроков</p>
             </li>
             <li class="features-item">
               <span class="number">50<sup>%</sup></span>
-              <p>Минимальная предоплата</p>
+              <p class="features-text">Минимальная предоплата</p>
             </li>
           </ul>
         </div>
@@ -206,20 +213,22 @@
   <section class="modal-write-us">
     <h2>Напишите нам</h2>
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-      <button class="btn-close" type="button" name="button">Закрыть</button>
+      <button class="btn-close" type="button" name="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
+      </button>
       <div class="write-us-top">
         <div class="name-field">
-          <label for="name"><b>Ваше имя:</b></label>
-          <input type="text" name="name" value="" placeholder="Имя Фамилия" id="name">
+          <label class="modal-input-label" for="name"><b>Ваше имя:</b></label>
+          <input class="modal-input" type="text" name="name" value="" placeholder="Имя Фамилия" id="name">
         </div>
         <div class="email-field">
-          <label for="email"><b>Ваш e-mail:</b></label>
-          <input type="email" name="email" value="" placeholder="email@example.com" id="email">
+          <label class="modal-input-label" for="email"><b>Ваш e-mail:</b></label>
+          <input class="modal-input" type="email" name="email" value="" placeholder="email@example.com" id="email">
         </div>
       </div>
       <div class="write-us-middle">
-        <label for="textarea"><b>Текст письма:</b></label>
-        <textarea placeholder="В свободной форме" rows="4" id="textarea"></textarea>
+        <label class="modal-input-label" for="textarea"><b>Текст письма:</b></label>
+        <textarea class="modal-input" placeholder="В свободной форме" rows="4" id="textarea"></textarea>
       </div>
       <div class="write-us-bot">
         <button class="button button-red" type="submit" name="send" value="Напишите нам">Отправить</button>

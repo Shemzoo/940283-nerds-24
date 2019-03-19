@@ -21,12 +21,19 @@
           <ul class="main-navigation-list">
             <li class="main-navigation-list-item"><a href="studio.html">Студия</a></li>
             <li class="main-navigation-list-item"><a href="clients.html">Клиенты</a></li>
-            <li class="main-navigation-list-item"><a href="catalog.html">Магазин</a></li>
+            <li class="main-navigation-list-item-current"><a href="catalog.html">Магазин</a></li>
             <li class="main-navigation-list-item"><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
-        <a class="cart-item">
-          <img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина</a>
+        <a class="cart-item" href="cart.html">
+          <svg class="cart-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+          <g>
+          	<circle cx="4.5" cy="13.5" r="1.5"/>
+          	<circle cx="12.5" cy="13.5" r="1.5"/>
+          	<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+          </g>
+          </svg>Корзина</a>
       </div>
     <div class="header-bot">
       <h1>Магазин готовых шаблонов</h1>
@@ -84,7 +91,7 @@
             <div class="filter-features">
               <ul class="filter-features-list">
                 <li>
-                  <input type="checkbox" name="feature" value="slider" id="slider">
+                  <input type="checkbox" name="feature" value="slider" id="slider" checked>
                   <label for="slider">Слайдер</label>
                 </li>
                 <li>
@@ -92,7 +99,7 @@
                   <label for="features-list">Блок преимуществ</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="feature" value="news" id="news">
+                  <input type="checkbox" name="feature" value="news" id="news" checked>
                   <label for="news">Новости</label>
                 </li>
                 <li>
@@ -115,16 +122,16 @@
         <div class="sorting">
           <p class="sorting-bold">сортировать:</p>
           <ul class="sorting-list-1">
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По названию</li>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По названию</a></li>
           </ul>
           <ul class="sorting-list-2">
             <li>
-              <img src="img/icon-down-dir.svg" width="11" height="10" alt="кнопка вниз">
+              <a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="кнопка вниз"></a>
             </li>
             <li>
-              <img src="img/icon-up-dir.svg" width="11" height="10" alt="кнопка вверх">
+              <a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="кнопка вверх"></a>
             </li>
           </ul>
         </div>
@@ -135,8 +142,8 @@
             </div>
             <img src="img/img-sedona.png" width="360" height="576" alt="Sedona">
             <div class="catalog-item-card">
-              <p class="bold">Sedona</p>
-              <p class="card-gray-text">Информационный сайт для туристов</p>
+              <p class="card-bold">Sedona</p>
+              <p class="card-gray-text">Информационный сайт<br> для туристов</p>
               <a class="card-button" href="#">9 900 РУБ.</a>
             </div>
           </li>
@@ -146,8 +153,8 @@
             </div>
             <img src="img/img-pink.png" width="360" height="576" alt="Pink">
             <div class="catalog-item-card">
-              <p class="bold">Pink App</p>
-              <p class="card-gray-text">Продуктовый лендинг приложения для iOS и Android</p>
+              <p class="card-bold">Pink App</p>
+              <p class="card-gray-text">Продуктовый лендинг<br> приложения для iOS и Android</p>
               <a class="card-button" href="#">9 900 РУБ.</a>
             </div>
           </li>
@@ -157,8 +164,8 @@
             </div>
             <img src="img/img-barbershop.png" width="360" height="576" alt="Borodinsky">
             <div class="catalog-item-card">
-              <p class="bold">Barbershop</p>
-              <p class="card-gray-text">Сайт салона красоты. Для мужчин, да.</p>
+              <p class="card-bold">Barbershop</p>
+              <p class="card-gray-text">Сайт салона красоты.<br> Для мужчин, да.</p>
               <a class="card-button" href="#">9 900 РУБ.</a>
             </div>
           </li>
@@ -168,8 +175,8 @@
             </div>
             <img src="img/img-mishka.png" width="360" height="576" alt="Mishka">
             <div class="catalog-item-card">
-              <p class="bold">Mishka</p>
-              <p class="card-gray-text">Интернет-магазин вязаных игрушек</p>
+              <p class="card-bold">Mishka</p>
+              <p class="card-gray-text">Интернет-магазин<br> вязаных игрушек</p>
               <a class="card-button" href="#">9 900 РУБ.</a>
             </div>
           </li>
@@ -179,8 +186,8 @@
             </div>
             <img src="img/img-aplus.png" width="360" height="576" alt="Aplus">
             <div class="catalog-item-card">
-              <p class="bold">A Plus</p>
-              <p class="card-gray-text">Лендинг курсов повышения квалификации</p>
+              <p class="card-bold">A Plus</p>
+              <p class="card-gray-text">Лендинг курсов повышения<br> квалификации</p>
               <a class="card-button" href="#">9 900 РУБ.</a>
             </div>
           </li>
@@ -190,8 +197,8 @@
             </div>
             <img src="img/img-kvast.png" width="360" height="576" alt="Kvas">
             <div class="catalog-item-card">
-              <p class="bold">кваст</p>
-              <p class="card-gray-text">Промо-сайт производителя крафтового кваса</p>
+              <p class="card-bold">кваст</p>
+              <p class="card-gray-text">Промо-сайт производителя<br> крафтового кваса</p>
               <a class="card-button" href="#">9 900 РУБ.</a>
             </div>
           </li>
