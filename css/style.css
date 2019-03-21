@@ -67,8 +67,8 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 194px;
-  margin-top: 3px;
+  margin-left: auto;
+  margin-top: 0;
   padding-top: 16px;
   position: relative;
   color: #000000;
@@ -87,7 +87,7 @@ body {
 .order-button {
   display: block;
   width: 160px;
-  padding: 16px 0;
+  padding: 17px 0;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -123,7 +123,7 @@ body {
 .service-list-items p {
   color: #283136;
   width: 275px;
-  margin-bottom: 33px;
+  margin-bottom: 31px;
 }
 
 .lead {
@@ -135,7 +135,7 @@ body {
 }
 
 .about-left p {
-  margin-bottom: 32px;
+  margin-bottom: 34px;
   margin-top: 0;
 }
 
@@ -251,11 +251,7 @@ body {
   background-color: #eeeeee;
 }
 
-.pagination-item-current a {
-  height: 50px;
-  background-color: #ffffff;
-  border: solid 2px #dbdbdb;
-}
+
 
 .pagination-item a:hover,
 .pagination-item a:focus {
@@ -481,6 +477,7 @@ body {
   background-color: #e74246;
 }
 
+
 .button:active {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
@@ -500,8 +497,18 @@ body {
           box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
+.button-green:hover,
+.button-green:focus {
+  background-color: #00bc6c;
+}
+
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: #eab534;
+}
+
 .service-list {
-  margin-bottom: 66px;
+  margin-bottom: 38px;
 }
 
 .service-list-items {
@@ -511,12 +518,10 @@ body {
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
+  border-bottom: 2px solid #e1e1e1;
+  padding-bottom: 80px;
 }
 
-.service-list-items {
-  border-bottom: 2px solid #e1e1e1;
-  padding-bottom: 81px;
-}
 
 .about {
   display: -webkit-box;
@@ -529,7 +534,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 0;
+    margin-bottom: 56px;
 }
 
 .features-list {
@@ -579,7 +584,7 @@ body {
 }
 
 .about-left {
-  padding-top: 8px;
+  padding-top: 36px;
   width: 655px;
 }
 
@@ -611,6 +616,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 55px;
 }
 
 .footer-catalog-wrapper {
@@ -627,7 +633,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
   padding-top: 35px;
   padding-left: 17px;
   padding-bottom: 70px;
@@ -759,7 +765,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .sorting-list-1,
@@ -854,7 +860,9 @@ body {
           flex-grow: 1;
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
-  margin-bottom: 28px;
+  margin-bottom: 34px;
+  line-height: 0;
+  position: relative;
 }
 
 .catalog-list li:nth-child(odd) {
@@ -863,10 +871,12 @@ body {
 
 .pagination-list li {
   display: inline-block;
-  margin-right: 6px;
+  margin-right: 9px;
   text-align: justify;
   vertical-align: middle;
 }
+
+
 
 .pagination-list a {
   text-decoration: none;
@@ -881,10 +891,19 @@ body {
 
 .pagination-item-last a {
   text-decoration: none;
-  margin-left: 4px;
-  padding-left: 77px;
-  padding-right: 77px;
+  margin-left: 0;
+  padding-left: 74px;
+  padding-right: 78px;
   border-radius: 3%;
+}
+
+.pagination-item-current a {
+  background-color: #ffffff;
+  border: solid 2px #dbdbdb;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .service-list-items li {
@@ -997,6 +1016,7 @@ body {
 }
 
 .filters {
+  margin-top: 2px;
   width: 260px;
 }
 
@@ -1174,14 +1194,6 @@ body {
   right: 35px;
 
 }
-.about {
-  margin-bottom: 29px;
-}
-
-.about-right {
-  position: relative;
-  bottom: 28px;
-}
 
 .three-points-border {
   height: 40px;
@@ -1241,7 +1253,7 @@ body {
 }
 
 .filter-features {
-  margin-bottom: 42px;
+  margin-bottom: 48px;
 }
 
 .filter-features-list {
@@ -1251,7 +1263,7 @@ body {
 }
 
 .filter-features-list li {
-  margin-bottom: 17px;
+  margin-bottom: 16px;
   cursor: pointer;
   position: relative;
 }
@@ -1320,10 +1332,6 @@ body {
           box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
-.catalog-item {
-  position: relative;
-}
-
 .catalog-item:hover {
   -webkit-box-shadow: 3px 3px 10px 0px #dfdfdf;
           box-shadow: 3px 3px 10px 0px #dfdfdf;
@@ -1339,6 +1347,7 @@ body {
   background-color: #eeeeee;
   width: 360px;
   padding-bottom: 48px;
+  line-height: 0;
 }
 
 .catalog-item:hover .catalog-item-card {
