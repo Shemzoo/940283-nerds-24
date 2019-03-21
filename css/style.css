@@ -114,7 +114,7 @@ body {
 
 .service-list-items h2 {
   padding: 0;
-  margin: 19px 0 0;
+  margin: 17px 0 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -633,7 +633,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 58px;
+  margin-bottom: 55px;
   padding-top: 35px;
   padding-left: 17px;
   padding-bottom: 70px;
@@ -647,7 +647,7 @@ body {
 
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: 52px;
   margin-bottom: 59px;
 }
 
@@ -765,7 +765,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
 }
 
 .sorting-list-1,
@@ -851,7 +851,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 28px;
+  margin-bottom: 38px;
 }
 
 .catalog-list li {
@@ -860,7 +860,7 @@ body {
           flex-grow: 1;
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
-  margin-bottom: 37px;
+  margin-bottom: 34px;
   line-height: 0;
   position: relative;
 }
@@ -1346,7 +1346,7 @@ body {
           align-items: center;
   background-color: #eeeeee;
   width: 360px;
-  padding-bottom: 48px;
+  padding-bottom: 42px;
   line-height: 0;
 }
 
