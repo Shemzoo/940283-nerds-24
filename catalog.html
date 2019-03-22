@@ -6,7 +6,7 @@
   <title>Каталог</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -70,15 +70,15 @@
               <legend>Сетка:</legend>
               <ul class="filter-radiobuttons">
                 <li>
-                  <input class="radiobuttons-input" type="radio" name="layout-type" value="adaptive" id="adaptive" checked>
+                  <input class="radiobuttons-input visually-hidden" type="radio" name="layout-type" value="adaptive" id="adaptive" checked>
                   <label class="radiobutton-anchor" for="adaptive">Адаптивная</label>
                 </li>
                 <li>
-                  <input class="radiobuttons-input" type="radio" name="layout-type" value="fixed" id="fixed">
+                  <input class="radiobuttons-input visually-hidden" type="radio" name="layout-type" value="fixed" id="fixed">
                   <label class="radiobutton-anchor" for="fixed">Фиксированная</label>
                 </li>
                 <li>
-                  <input class="radiobuttons-input" type="radio" name="layout-type" value="fluid" id="fluid">
+                  <input class="radiobuttons-input visually-hidden" type="radio" name="layout-type" value="fluid" id="fluid">
                   <label class="radiobutton-anchor" for="fluid">Резиновая</label>
                 </li>
               </ul>
@@ -90,23 +90,23 @@
               <div class="filter-features">
                 <ul class="filter-features-list">
                   <li>
-                    <input class="checkbox-input" type="checkbox" name="feature" value="slider" id="slider" checked>
+                    <input class="checkbox-input visually-hidden" type="checkbox" name="feature" value="slider" id="slider" checked>
                     <label for="slider">Слайдер</label>
                   </li>
                   <li>
-                    <input class="checkbox-input" type="checkbox" name="feature" value="features-list" id="features-list">
+                    <input class="checkbox-input visually-hidden" type="checkbox" name="feature" value="features-list" id="features-list">
                     <label for="features-list">Блок преимуществ</label>
                   </li>
                   <li>
-                    <input class="checkbox-input" type="checkbox" name="feature" value="news" id="news" checked>
+                    <input class="checkbox-input visually-hidden" type="checkbox" name="feature" value="news" id="news" checked>
                     <label for="news">Новости</label>
                   </li>
                   <li>
-                    <input class="checkbox-input" type="checkbox" name="feature" value="gallery" id="gallery">
+                    <input class="checkbox-input visually-hidden" type="checkbox" name="feature" value="gallery" id="gallery">
                     <label for="gallery">Галерея</label>
                   </li>
                   <li>
-                    <input class="checkbox-input" type="checkbox" name="feature" value="cart" id="cart">
+                    <input class="checkbox-input visually-hidden" type="checkbox" name="feature" value="cart" id="cart">
                     <label for="cart">Корзина</label>
                   </li>
                 </ul>
@@ -233,7 +233,7 @@
         <p class="address-bold">NЁRDS design studio</p>
         <p class="address-content">191186, Санкт-Петербург, ул. Б. Конюшенная, д 19/8</p>
         <p class="tel-number">тел. +7 (812) 275-75-75</p>
-        <a class="write-us-button" href="popup">Напишите нам!</a>
+        <a class="write-us-button" href="popup.html">Напишите нам!</a>
       </div>
     </div>
 
@@ -270,6 +270,34 @@
 
   </footer>
 
+  <section class="modal-write-us">
+    <h2>Напишите нам</h2>
+    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+      <button class="btn-close" type="button" name="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+          <path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z" /></svg>
+      </button>
+      <div class="write-us-top">
+        <div class="name-field">
+          <label class="modal-input-label" for="name"><b>Ваше имя:</b></label>
+          <input class="modal-input" type="text" name="name" value="" placeholder="Имя Фамилия" id="name">
+        </div>
+        <div class="email-field">
+          <label class="modal-input-label" for="email"><b>Ваш e-mail:</b></label>
+          <input class="modal-input" type="email" name="email" value="" placeholder="email@example.com" id="email">
+        </div>
+      </div>
+      <div class="write-us-middle">
+        <label class="modal-input-label" for="textarea"><b>Текст письма:</b></label>
+        <textarea class="modal-input" placeholder="В свободной форме" rows="4" id="textarea"></textarea>
+      </div>
+      <div class="write-us-bot">
+        <button class="modal-button" type="submit" name="send" value="Напишите нам">Отправить</button>
+      </div>
+    </form>
+  </section>
+
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script src="js/main.min.js"></script>
+  <script src="js/popup.js"></script>
 </body>

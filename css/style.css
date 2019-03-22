@@ -360,6 +360,7 @@ body {
 
   border-radius: 50%;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 .slider-controls label::after {
@@ -511,6 +512,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -593,6 +595,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   border-top: 2px solid #e1e1e1;
   border-bottom: 2px solid #e1e1e1;
   -webkit-box-flex: 1;
@@ -600,6 +603,10 @@ body {
           flex-grow: 1;
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
+}
+
+.map {
+  overflow: auto;
 }
 
 .map img {
@@ -708,6 +715,7 @@ body {
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .price-controls input {
@@ -900,10 +908,6 @@ body {
   margin-right: 100px;
 }
 
-.service-list-items:last-child ul {
-  margin-right: 0;
-}
-
 .service-list-items h2 {
   text-transform: uppercase;
 }
@@ -1000,7 +1004,7 @@ body {
   font-weight: 700;
 }
 
-.service-list-items li:last-child {
+.service-list-items li:nth-child(an+b) {
   margin-right: 0;
 }
 
@@ -1051,6 +1055,7 @@ body {
 .whereabouts {
   margin-bottom: 55px;
   position: relative;
+  overflow: hidden;
 }
 
 .whereabouts .container {
@@ -1181,7 +1186,7 @@ body {
   position: relative;
   top: 20px;
   right: 35px;
-
+  vertical-align: middle;
 }
 
 .three-points-border {
@@ -1207,12 +1212,10 @@ body {
   cursor: pointer;
 }
 
-.radiobuttons-input {
-  display: none;
-}
 
 .radiobuttons-input + label {
-  display:inline;
+  display: inline;
+  vertical-align: middle;
 }
 
 .radiobuttons-input + label:before {
@@ -1261,12 +1264,9 @@ body {
   cursor: pointer;
 }
 
-.checkbox-input {
-  display:none;
-}
-
 .checkbox-input ~ label {
-  display:inline;
+  display: inline;
+  vertical-align: middle;
 }
 
 .checkbox-input ~ label:before {
@@ -1295,6 +1295,14 @@ body {
 
 .checkbox-input:disabled ~ label:before {
   opacity: 0.3;
+}
+
+.radiobuttons-input:focus + label:before {
+  outline: 2px solid grey;
+}
+
+.checkbox-input:focus + label:before {
+  outline: 2px solid grey;
 }
 
 .show-button {
@@ -1537,4 +1545,27 @@ body {
 
 .slider-item-button {
   padding: 16px 0;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
 }
